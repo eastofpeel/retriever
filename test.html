@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RETRIEVER</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/867823605600354314/1325685667770011723/monkey_puppet_logo.png?ex=677cb07d&is=677b5efd&hm=44de7538fc15ec830cea377fc9d1482ead896e766f4731531b157f5140476994&=&format=webp&quality=lossless&width=1024&height=1024" />
+  <link rel="shortcut icon" type="image/png" href="https://media.discordapp.net/attachments/867823605600354314/1325685667770011723/monkey_puppet_logo.png?ex=677cb07d&is=677b5efd&hm=44de7538fc15ec830cea377fc9d1482ead896e766f4731531b157f5140476994&=&format=webp&quality=lossless&width=1024&height=1024" />
+  
+  <style>
+    .dancing-bg {
+      background: linear-gradient(120deg, #fef3c7, #fde68a, #fcd34d);
+      animation: gradientBG 15s ease infinite;
+    }
+    
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .dance-bounce {
+      animation: dance 2s ease-in-out infinite;
+    }
+
+    @keyframes dance {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .glow-warm {
+      animation: glowWarm 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glowWarm {
+      from {
+        box-shadow: 0 0 10px #fcd34d,
+                    0 0 20px #f59e0b,
+                    0 0 30px #d97706;
+      }
+      to {
+        box-shadow: 0 0 20px #fcd34d,
+                    0 0 30px #f59e0b,
+                    0 0 40px #d97706;
+      }
+    }
+  </style>
+</head>
+
+<body class="h-screen dancing-bg bg-gradient-to-r p-2 flex flex-col w-full" style="font-family: 'Fredoka', sans-serif;">
+  <div id="loading" class="fixed inset-0 w-full h-full z-10 flex flex-col justify-center items-center bg-amber-100">
+    <div class="text-4xl font-bold text-center text-amber-800">
+      <span class="block text-7xl dance-bounce">$RETRIEVER</span>
+      <span class="text-2xl block mt-4">Get ready to dance! 🐕</span>
+    </div>
+  </div>
+
+  <header class="relative w-full max-w-screen-xl mx-auto justify-between flex items-center animate__animated to_animate bg-white/30 backdrop-blur-md rounded-2xl p-2">
+    <div class="flex items-center space-x-2">
+      <img src="https://media.discordapp.net/attachments/867823605600354314/1325685667770011723/monkey_puppet_logo.png?ex=677cb07d&is=677b5efd&hm=44de7538fc15ec830cea377fc9d1482ead896e766f4731531b157f5140476994&=&format=webp&quality=lossless&width=1024&height=1024" class="w-10 h-10 rounded-full dance-bounce" alt="Dancing Retriever Logo">
+      <span class="font-bold text-xl text-amber-800">$RETRIEVER</span>
+    </div>
+
+    <nav>
+      <a href="https://dexscreener.com/solana/FdrYAjYfEWYUQqQGEwFE9DHAbYgArPK1fBZrmetZpump" target="_blank" 
+         class="transition transform hover:scale-105 bg-amber-400 text-amber-900 rounded-full px-4 py-2 font-bold shadow-lg hover:shadow-xl text-sm">
+        Buy $RETRIEVER
+      </a>
+    </nav>
+  </header>
+
+  <main class="w-full max-w-screen-xl flex-1 mx-auto flex flex-col gap-2 justify-center py-2">
+    <h1 class="text-center font-bold text-2xl md:text-4xl text-amber-900 animate__animated animate__bounceIn">
+      The Best Dancing Dog Token On Solana
+    </h1>
+
+    <div class="flex justify-center items-center w-full gap-8 pt-16">
+        <div class="w-1/3">
+          <img src="https://cdn.discordapp.com/attachments/514282707921010709/1325691968755339306/new.gif?ex=677cb65b&is=677b64db&hm=8bdd4d1a89533a9f099b2adbf3eee988ead7e353d11a3f599b9c9d7b22df1740&" 
+               alt="Dancing Golden Retriever" 
+               class="glow-warm rounded-3xl shadow-2xl w-full h-[300px] dance-bounce object-contain">
+        </div>
+        
+        <div class="w-1/3 space-y-2">
+          <div class="bg-white/40 backdrop-blur-md rounded-2xl p-3 transform hover:scale-105 transition">
+            <h3 class="text-lg font-bold text-amber-800">Dance Technology™</h3>
+            <p class="text-sm text-amber-900">Bringing joy to the blockchain, one dance move at a time! 🕺</p>
+          </div>
+  
+          <div class="bg-white/40 backdrop-blur-md rounded-2xl p-3 transform hover:scale-105 transition">
+            <h3 class="text-lg font-bold text-amber-800">Pure Happiness</h3>
+            <p class="text-sm text-amber-900">Every transaction spreads smiles across the Solana network 😊</p>
+          </div>
+  
+          <div class="bg-white/40 backdrop-blur-md rounded-2xl p-3 transform hover:scale-105 transition">
+            <h3 class="text-lg font-bold text-amber-800">Vibrant Community</h3>
+            <p class="text-sm text-amber-900">Join the most pawsome community in crypto! 🐾</p>
+          </div>
+        </div>
+      </div>
+
+        <div class="flex gap-8 pt-16">
+          <a href="https://dexscreener.com/solana/FdrYAjYfEWYUQqQGEwFE9DHAbYgArPK1fBZrmetZpump" target="_blank" 
+             class="flex-1 bg-amber-400 text-amber-900 rounded-xl px-4 py-2 font-bold text-center transform hover:scale-105 transition shadow-lg text-sm">
+            Buy Now
+          </a>
+          <a href="https://t.me/DancingGoldenRetriever" target="_blank" 
+             class="flex-1 bg-white text-amber-900 rounded-xl px-4 py-2 font-bold text-center transform hover:scale-105 transition shadow-lg text-sm">
+            Join Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="w-full max-w-screen-xl mx-auto mt-2 space-y-2">
+    <button id="copy_address" 
+            class="w-full bg-white/40 backdrop-blur-md rounded-xl p-2 flex items-center justify-center gap-2 hover:bg-white/60 transition">
+      <div id="defaultCopySvg">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-amber-800">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 7.5V6.108c0-1.135.845-2.098 1.976-2.192.373-.03.748-.057 1.123-.08M15.75 18H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08M15.75 18.75v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5A3.375 3.375 0 0 0 6.375 7.5H5.25m11.9-3.664A2.251 2.251 0 0 0 15 2.25h-1.5a2.251 2.251 0 0 0-2.15 1.586m5.8 0c.065.21.1.433.1.664v.75h-6V4.5c0-.231.035-.454.1-.664M6.75 7.5H4.875c-.621 0-1.125.504-1.125 1.125v12c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V16.5a9 9 0 0 0-9-9Z" />
+        </svg>
+      </div>
+      <div class="text-green-700 hidden" id="copiedSvg">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+        </svg>
+      </div>
+      <span class="font-mono text-amber-900 text-sm truncate">FdrYAjYfEWYUQqQGEwFE9DHAbYgArPK1fBZrmetZpump</span>
+    </button>
+
+    <div class="bg-white/40 backdrop-blur-md rounded-xl p-2 flex flex-wrap justify-center items-center gap-4">
+      <a href="https://x.com/retrieverCTO" target="_blank" class="text-amber-900 font-bold hover:text-amber-700 text-sm">Twitter</a>
+      <a href="https://t.me/DancingGoldenRetriever" target="_blank" class="text-amber-900 font-bold hover:text-amber-700 text-sm">Telegram</a>
+      <a href="https://dexscreener.com/solana/FdrYAjYfEWYUQqQGEwFE9DHAbYgArPK1fBZrmetZpump" target="_blank" class="text-amber-900 font-bold hover:text-amber-700 text-sm">Dexscreener</a>
+      <a href="https://www.dextools.io/app/en/solana/pair-explorer/FdrYAjYfEWYUQqQGEwFE9DHAbYgArPK1fBZrmetZpump" target="_blank" class="text-amber-900 font-bold hover:text-amber-700 text-sm">Dextools</a>
+      <a href="https://coinmarketcap.com/dexscan/solana/FdrYAjYfEWYUQqQGEwFE9DHAbYgArPK1fBZrmetZpump/" target="_blank" class="text-amber-900 font-bold hover:text-amber-700 text-sm">CoinMarketCap</a>
+      <a href="https://www.coingecko.com/" target="_blank" class="text-amber-900 font-bold hover:text-amber-700 text-sm">CoinGecko</a>
+    </div>
+  </footer>
+
+  <script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      const loadingDiv = document.getElementById('loading');
+      document.body.style.overflow = 'hidden';
+      setTimeout(() => {
+        loadingDiv.classList.add('animate__animated', 'animate__slideOutUp');
+        loadingDiv.addEventListener('animationend', () => {
+          loadingDiv.style.display = 'none';
+          document.body.style.overflow = '';
+        });
+      }, 2000);
+    });
+
+    const address = "FdrYAjYfEWYUQqQGEwFE9DHAbYgArPK1fBZrmetZpump";
+    const copyAddress = document.getElementById('copy_address');
+    const defaultCopySvg = document.getElementById('defaultCopySvg');
+    const copiedSvg = document.getElementById('copiedSvg');
+    let intervalId;
+
+    copyAddress.addEventListener('click', async () => {
+      await navigator.clipboard.writeText(address);
+      defaultCopySvg.classList.add('hidden');
+      copiedSvg.classList.remove('hidden');
+
+      clearInterval(intervalId);
+      intervalId = setInterval(() => {
+        copiedSvg.classList.add('hidden');
+        defaultCopySvg.classList.remove('hidden');
+      }, 2000);
+    });
+  </script>
+</body>
+</html>
